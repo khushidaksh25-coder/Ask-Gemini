@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Buddy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">✦ StudyBuddy AI</a>
+        <span class="tag">YOUR AI LEARNING PARTNER</span>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="badge">✦ SMARTER STUDYING STARTS HERE</div>
+            <h1>Learn anything.<br><span>Understand everything.</span></h1>
+            <p>Your personal AI study assistant. Explain difficult topics, practice quizzes, and create quick revision notes.</p>
+        </section>
+
+        <section class="study-card">
+            <label for="topic">WHAT DO YOU WANT TO LEARN TODAY?</label>
+
+            <textarea
+                id="topic"
+                placeholder="Enter a topic, e.g. JavaScript functions, photosynthesis, or computer networks..."
+                rows="4"
+            ></textarea>
+
+            <div class="actions">
+                <button class="action-btn active" data-task="explain">✧ Explain Topic</button>
+                <button class="action-btn" data-task="quiz">☷ Generate Quiz</button>
+                <button class="action-btn" data-task="notes">▤ Quick Notes</button>
+            </div>
+
+            <button id="studyBtn" class="study-btn">✦ Start Learning <span>→</span></button>
+
+            <p class="hint">Choose a learning mode, enter a topic, and let AI help you learn.</p>
+        </section>
+
+        <section id="resultSection" class="result-section hidden">
+            <div class="result-header">
+                <h2 id="resultTitle">Your Study Guide</h2>
+                <button id="copyBtn" class="copy-btn">Copy Result</button>
+            </div>
+            <p id="status" role="status" aria-live="polite"></p>
+            <div id="result" class="result-content"></div>
+        </section>
+
+        <footer>Made for curious minds <span>✦</span> Powered by Gemini AI</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #080d20, #17113a, #101d38);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid #5145a9;
+    border-radius: 30px;
+    background: #211c45;
+    color: #c9c2ff;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-size: clamp(36px, 7vw, 56px);
+    margin-bottom: 14px;
+    background: linear-gradient(90deg, #a78bfa, #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.subtitle {
+    color: #b7bdd2;
+    line-height: 1.6;
+    margin-bottom: 36px;
+}
+
+.fact-card {
+    padding: 36px 28px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(167, 139, 250, 0.3);
+    border-radius: 24px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+}
+
+.bulb {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.fact-card h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+#fact {
+    color: #d7dcef;
+    font-size: 17px;
+    line-height: 1.8;
+    min-height: 60px;
+    overflow-wrap: anywhere;
+}
+
+.status {
+    color: #a5b4fc;
+    font-size: 14px;
+    margin-top: 12px;
+    min-height: 20px;
+}
+
+button {
+    margin-top: 24px;
+    padding: 15px 24px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #7c3aed, #3b82f6);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.footer {
+    margin-top: 28px;
+    color: #929bb5;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    .fact-card {
+        padding: 28px 18px;
+    }
+
+    .fact-card h2 {
+        font-size: 21px;
+    }
+
+    #fact {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

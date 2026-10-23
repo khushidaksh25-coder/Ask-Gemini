@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Daily Journal</title>
+  <link rel="stylesheet" href="daily.css">
+  <script src="daily.js" defer></script>
+</head>
+<body>
+  <main class="journal-card">
+    <h1>My Daily Journal ✨</h1>
+    <p>Take a moment for yourself. How are you feeling today?</p>
+
+    <label for="mood">Choose your mood</label>
+    <select id="mood">
+      <option value="happy">😊 Happy</option>
+      <option value="stressed">😟 Stressed</option>
+      <option value="curious">🤔 Curious</option>
+      <option value="sad">💙 Sad</option>
+      <option value="calm">🌿 Calm</option>
+    </select>
+
+    <button id="generateBtn">Generate Journal Prompt</button>
+
+    <section id="result" aria-live="polite">
+      <p>Your journal prompt will appear here.</p>
+    </section>
+  </main>
+</body>
+</html>
