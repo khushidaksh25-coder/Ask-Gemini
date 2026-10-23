@@ -6,7 +6,7 @@ const apiKey = process.env.GEMINI_API_KEY;
 const ai = new GoogleGenAI({ apiKey })
 
 const app = express()
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 app.use(express.json())
 app.use(express.static("public"))
 app.get("/api/test", (req, res) => {
@@ -29,7 +29,7 @@ app.post("/api/ask", async (req, res) => {
     }
     try {
         const response = await ai.models.generateContent({
-            model: "gemini-3.8-flash",
+            model: "gemini-3.6-flash",
             contents: question,
 
         })

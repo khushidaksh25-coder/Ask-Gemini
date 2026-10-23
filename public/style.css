@@ -102,7 +102,7 @@ button:disabled {
     color: #E2E8F0;
 }
 
-/* Tablet */
+
 @media (max-width: 768px) {
     main {
         width: 100%;
